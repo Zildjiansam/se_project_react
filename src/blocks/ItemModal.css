@@ -1,0 +1,48 @@
+.modal__item_container {
+  position: relative;
+  max-width: 498px;
+  max-height: 610px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: "Cabinet Grotesk";
+  font-weight: bold;
+}
+
+.modal__item-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/modal-close.svg) center no-repeat;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.modal__item_photo {
+  max-width: 498px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal__item_name {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.modal__item_weather-type {
+  display: flex;
+  margin: 10px 0 15px;
+  padding-left: 20px;
+  font-weight: 1000;
+}
+
+.modal_weather-type_type {
+  margin-left: 5px;
+}
+
+.modal_weather-type_type::first-letter {
+  text-transform: capitalize;
+}
