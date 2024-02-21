@@ -1,12 +1,6 @@
 import "../blocks/ModalWithForm.css";
 
-function ModalWithForm({
-  children,
-  buttonText = "Add Garment",
-  title,
-  OnClose,
-  name,
-}) {
+function ModalWithForm({ children, buttonText, title, OnClose, name }) {
   return (
     <div className={`modal modal_type_${name}`} onClick={OnClose}>
       <div className="modal__form_container">

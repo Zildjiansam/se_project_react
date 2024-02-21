@@ -2,7 +2,7 @@ const apiKey = "dbadc8cd2956e3508b9a016c2af78b3a";
 
 // const apiRequest = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}`;
 
-const cl = console.log.bind(console);
+// const cl = console.log.bind(console);
 const latitude = 44.34;
 const longitude = 10.99;
 

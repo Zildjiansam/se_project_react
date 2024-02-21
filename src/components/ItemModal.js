@@ -1,13 +1,13 @@
 import "../blocks/ItemModal.css";
 
-function ItemModal({ selectedCard, OnClose }) {
+function ItemModal({ selectedCard, onClose }) {
   return (
     <div className={"modal"}>
-      <div className="modal__item_container" onClick={OnClose}>
+      <div className="modal__item_container" onClick={onClose}>
         <button
           className="modal__item-close-btn"
           type="button"
-          onClick={OnClose}
+          onClick={onClose}
         ></button>
         <img
           className="modal__item_photo"

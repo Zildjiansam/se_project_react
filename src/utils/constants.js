@@ -56,7 +56,7 @@ export const weatherOptions = [
   { url: DayRainy, day: true, type: "rainy" },
   { url: DayFoggy, day: true, type: "fog" },
   { url: DaySnowy, day: true, type: "snow" },
-  { url: DayStormy, day: true, type: "storm" },
+  { url: DayStormy, day: true, type: "stormy" },
   { url: NightClear, day: false, type: "clear" },
   { url: NightCloudy, day: false, type: "cloudy" },
   { url: NightRainy, day: false, type: "rainy" },

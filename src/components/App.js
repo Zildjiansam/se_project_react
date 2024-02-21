@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import ItemModal from "./ItemModal.js";
 import { getForecastWeather, parseWeatherData } from "../utils/weatherApi.js";
 
-const cl = console.log.bind(console);
+// const cl = console.log.bind(console);
 function App() {
   const weatherTemp = "50";
   const [activeModal, setActiveModal] = useState("");
@@ -28,10 +28,14 @@ function App() {
   }
 
   useEffect(() => {
-    getForecastWeather().then((data) => {
-      const temperature = parseWeatherData(data);
-      setTemp(temperature);
-    });
+    getForecastWeather()
+      .then((data) => {
+        const temperature = parseWeatherData(data);
+        setTemp(temperature);
+      })
+      .catch((err) => {
+        console.error(`Error ${err}`);
+      });
   }, []);
 
   return (
@@ -103,7 +107,7 @@ function App() {
       {activeModal === "preview" && (
         <ItemModal
           selectedCard={selectedCard}
-          OnClose={handleCloseActiveModal}
+          onClose={handleCloseActiveModal}
         />
       )}
     </div>

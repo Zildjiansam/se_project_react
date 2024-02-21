@@ -25,4 +25,5 @@
   border: gray 1px solid;
   border-radius: 20px;
   box-shadow: 10px;
+  cursor: pointer;
 }
