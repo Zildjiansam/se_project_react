@@ -1,37 +1,41 @@
-# WTWR (What To Wear?!)
+# WTWR (What to Wear?)
 
-fdavdvdfav
+## About the project
 
-## Installation
+The concept for this app is that the user can create a list of clothing articles that they own and assign each with one of three temperature ranges in which they'd like to wear that article. Then based on the users current location, we make an API call to gather the current weather information in the area and suggest which clothing articles that they might choose to wear.
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+## Links
 
-```bash
-pip install foobar
-```
+- [Figma Design](https://www.figma.com/file/DTojSwldenF9UPKQZd6RRb/Sprint-10%3A-WTWR)
 
-## Usage
+### Component Structure
 
-```python
-import foobar
+The project includes a components directory with the following components:
 
-# returns 'words'
-foobar.pluralize('word')
+- App.js
+  - Header.js
+  - Main.js
+    - WeatherCard.js
+    - ItemCard.js
+  - ModalWithForm.js
+  - ItemModal.js
+  - Footer.js
 
-# returns 'geese'
-foobar.pluralize('goose')
+### `npm start`
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Contributing
+### `npm run build`
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Please make sure to update tests as appropriate.
+The build is minified and the filenames include the hashes.\
 
-## License
+## how to run the app
 
-[MIT](https://choosealicense.com/licenses/mit/)
+- cd to the project root
+- open a terminal type `nvm use`
+- type `npm install`
+- type `npm run build`
