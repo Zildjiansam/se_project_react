@@ -1,6 +1,6 @@
 import "../blocks/Header.css";
 import WTWRLogo from "../images/WTWRLogo.svg";
-import UserAvatar from "../images/user-avatar.svg";
+import userAvatar from "../images/user-avatar.svg";
 
 function Header({ onCreateActiveModal }) {
   const currentDate = new Date().toLocaleString("default", {
@@ -33,7 +33,7 @@ function Header({ onCreateActiveModal }) {
         <li>
           <img
             className="header__user-avatar"
-            src={UserAvatar}
+            src={userAvatar}
             alt="user-avatar"
           />
         </li>

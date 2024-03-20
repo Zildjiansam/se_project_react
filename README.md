@@ -4,11 +4,11 @@
 
 The concept for this app is that the user can create a list of clothing articles that they own and assign each with one of three temperature ranges in which they'd like to wear that article. Then based on the users current location, we make an API call to gather the current weather information in the area and suggest which clothing articles that they might choose to wear.
 
-## Links
+## Design Links
 
-- [Figma Design](https://www.figma.com/file/DTojSwldenF9UPKQZd6RRb/Sprint-10%3A-WTWR)
+- [Figma Design](https://www.figma.com/file/F03bTb81Pw8IDPj5Y9rc5i/Sprint-10-%7C-WTWR)
 
-### Component Structure
+### Component File Structure
 
 The project includes a components directory with the following components:
 
@@ -32,10 +32,3 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-
-## how to run the app
-
-- cd to the project root
-- open a terminal type `nvm use`
-- type `npm install`
-- type `npm run build`

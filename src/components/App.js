@@ -48,7 +48,7 @@ function App() {
           id="modal-with-form"
           title="New Garment"
           buttonText="Add New Garment"
-          OnClose={handleCloseActiveModal}
+          onClose={handleCloseActiveModal}
         >
           <label className="modal__label" type="text" for="name">
             Name
