@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("../fonts/CabinetGrotesk-Regular.woff") format("woff");
+}
+
+.switch {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: "Cabinet Grotesk";
+  font-weight: 900;
+  margin-top: 5px;
+}
+
+.switch__box {
+  border-radius: 25px;
+  border: 3px solid #808080;
+  width: 65px;
+  height: 32px;
+  appearance: none;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.switch:hover .switch__box {
+  border-color: #000;
+}
+
+.switch__slider {
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.7s;
+}
+
+.switch__slider-F {
+  top: 3px;
+  left: 3px;
+}
+
+.switch__slider-C {
+  top: 3px;
+  left: calc(100% - 29px);
+}
+
+.switch__label__type-F {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin: 4px 0;
+  top: 1px;
+  left: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.switch__label__type-C {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin: 4px 0;
+  top: 1px;
+  left: 42px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.switch__type_active {
+  color: #fff;
+}

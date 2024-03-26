@@ -1,0 +1,22 @@
+.clothes-section {
+  width: 100%;
+}
+
+.clothes-section_header {
+  font-family: "Cabinet Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+.clothes-section__item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 330px);
+  grid-gap: 30px 30px;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 35px;
+}
