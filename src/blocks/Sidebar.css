@@ -1,4 +1,16 @@
 .profile__sidebar {
   width: 35%;
+  font-family: "Cabinet Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 10px;
+  text-align: center;
   /* text-align: center; */
+}
+
+.profile__sidebar_user-avatar {
+  width: 125px;
+  height: 125px;
+  margin: auto 0;
 }

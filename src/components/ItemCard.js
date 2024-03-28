@@ -7,7 +7,7 @@ function ItemCard({ item, onSelectCard }) {
       <img
         onClick={() => onSelectCard(item)}
         className="card__image"
-        src={item.link}
+        src={item.imageUrl}
         alt="Clothing Item"
       ></img>
     </li>

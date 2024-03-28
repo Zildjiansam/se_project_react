@@ -11,7 +11,7 @@ function ItemModal({ selectedCard, onClose }) {
         ></button>
         <img
           className="modal__item_photo"
-          src={selectedCard.link}
+          src={selectedCard.imageUrl}
           alt="Item Photo"
         />
         <div className="modal__item_name">{selectedCard.name}</div>

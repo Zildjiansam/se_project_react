@@ -2,12 +2,12 @@ import "../blocks/Profile.css";
 import Sidebar from "./Sidebar";
 import ClothesSection from "./ClothesSection";
 
-const Profile = ({ onSelectCard }) => {
+const Profile = ({ items, onSelectCard }) => {
   return (
     <>
       <main className="profile__main">
         <Sidebar />
-        <ClothesSection onSelectCard={onSelectCard} />
+        <ClothesSection onSelectCard={onSelectCard} items={items} />
       </main>
     </>
   );

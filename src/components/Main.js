@@ -8,7 +8,7 @@ import React from "react";
 
 const cl = console.log.bind(console);
 
-function Main({ weatherTemp, onSelectCard }) {
+function Main({ items, weatherTemp, onSelectCard }) {
   const { currentTempUnit } = useContext(CurrentTempUnitContext);
   const temp = weatherTemp?.temperature?.[currentTempUnit];
   const getFareWeatherType = () => {
@@ -35,7 +35,7 @@ function Main({ weatherTemp, onSelectCard }) {
     currentTempUnit === "F" ? getFareWeatherType : getCelsWeatherType
   )(temp);
 
-  const filteredCards = defaultClothingItems.filter((item) => {
+  const filteredCards = items.filter((item) => {
     return item.weather.toLocaleLowerCase() === weatherType;
   });
 
