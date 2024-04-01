@@ -9,8 +9,8 @@ import React from "react";
 // const cl = console.log.bind(console);
 
 function Main({ items, weatherTemp, onSelectCard }) {
-  const { currentTempUnit } = useContext(CurrentTemperatureUnitContext);
-  const temp = weatherTemp?.temperature?.[currentTempUnit];
+  const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
+  const temp = weatherTemp?.temperature?.[currentTemperatureUnit];
   const getFareWeatherType = () => {
     if (temp >= 86) {
       return "hot";
@@ -32,7 +32,7 @@ function Main({ items, weatherTemp, onSelectCard }) {
   };
 
   const weatherType = (
-    currentTempUnit === "F" ? getFareWeatherType : getCelsWeatherType
+    currentTemperatureUnit === "F" ? getFareWeatherType : getCelsWeatherType
   )(temp);
 
   const filteredCards = items.filter((item) => {

@@ -1,5 +1,5 @@
 import "../blocks/Profile.css";
-import SideBar from "./Sidebar.js";
+import SideBar from "./SideBar.js";
 import ClothesSection from "./ClothesSection";
 
 const Profile = ({ items, onSelectCard }) => {
