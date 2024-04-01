@@ -26,6 +26,13 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.modal__item_options {
+  display: flex;
+}
+
+.modal__item_info {
+  width: 75%;
+}
 
 .modal__item_name {
   margin-top: 20px;
@@ -45,4 +52,16 @@
 
 .modal_weather-type_type::first-letter {
   text-transform: capitalize;
+}
+
+.modal__delete-item-btn {
+  font-family: "Cabinet Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  color: #ff0000;
+  background-color: #fff;
+  padding-bottom: 35px;
+  cursor: pointer;
 }

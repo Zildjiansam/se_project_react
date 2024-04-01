@@ -3,7 +3,7 @@ import userAvatar from "../images/user-avatar.svg";
 
 const Sidebar = () => {
   return (
-    <section className="profile__sidebar">
+    <section className="sidebar__content">
       <img
         className="profile__sidebar_user-avatar"
         src={userAvatar}

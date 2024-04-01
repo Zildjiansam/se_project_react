@@ -54,39 +54,6 @@
   color: #000;
 }
 
-.modal__input {
-  margin-bottom: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-color: rgba(0, 0, 0, 1);
-  border-width: 1px;
-}
-
-.modal__label {
-  padding: 20px 0 10px 0;
-}
-
-.modal__weather-type-prompt {
-  margin: 16px 0 0 0;
-}
-
-.modal__radio-btn-group {
-  width: 15px;
-  margin: 10px 0;
-}
-
-.modal__radio-btn-label-pair {
-  display: flex;
-  color: #000;
-  margin: 5px 0;
-}
-
-.modal__radio-btn {
-  accent-color: #000;
-  margin-right: 5px;
-}
-
 .modal__btn-submit {
   max-width: 170px;
   font-weight: bold;

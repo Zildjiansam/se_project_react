@@ -6,7 +6,9 @@ const Profile = ({ items, onSelectCard }) => {
   return (
     <>
       <main className="profile__main">
-        <Sidebar />
+        <div className="profile__sidebar">
+          <Sidebar />
+        </div>
         <ClothesSection onSelectCard={onSelectCard} items={items} />
       </main>
     </>

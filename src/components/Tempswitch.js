@@ -27,14 +27,14 @@ function Tempswitch() {
           currentTempUnit === "F" && "switch__type_active"
         }`}
       >
-        F
+        F&deg;
       </p>
       <p
         className={`switch__label__type-C ${
           currentTempUnit === "C" && "switch__type_active"
         }`}
       >
-        C
+        C&deg;
       </p>
     </label>
   );

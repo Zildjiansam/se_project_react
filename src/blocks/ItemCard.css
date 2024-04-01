@@ -5,6 +5,7 @@
 
 .card {
   position: relative;
+  border-radius: 20px;
 }
 
 .card__title {
