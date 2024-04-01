@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "../blocks/Tempswitch.css";
-import { CurrentTempUnitContext } from "../contexts/CurrentTempUnitContext";
+import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext";
 
-function Tempswitch() {
+function ToggleSwitch() {
   const { currentTempUnit, handleToggleSwitchChange } = useContext(
-    CurrentTempUnitContext
+    CurrentTemperatureUnitContext
   );
 
   return (
@@ -40,4 +40,4 @@ function Tempswitch() {
   );
 }
 
-export default Tempswitch;
+export default ToggleSwitch;

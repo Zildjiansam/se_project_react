@@ -8,7 +8,7 @@ import AddItemModal from "./AddItemModal.js";
 import ItemDelConfirmModal from "./ItemDelConfirmModal.js";
 import { useEffect, useState } from "react";
 import { getForecastWeather, parseWeatherData } from "../utils/weatherApi.js";
-import { CurrentTempUnitContext } from "../contexts/CurrentTempUnitContext.js";
+import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext.js";
 import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min.js";
 import {
   getClothingItems,
@@ -94,7 +94,7 @@ function App() {
 
   return (
     <div className="app">
-      <CurrentTempUnitContext.Provider
+      <CurrentTemperatureUnitContext.Provider
         value={{ currentTempUnit, handleToggleSwitchChange }}
       >
         <Header onCreateActiveModal={handleCreateActiveModal} />
@@ -132,7 +132,7 @@ function App() {
             onSubmit={handleDeleteItem}
           />
         )}
-      </CurrentTempUnitContext.Provider>
+      </CurrentTemperatureUnitContext.Provider>
     </div>
   );
 }

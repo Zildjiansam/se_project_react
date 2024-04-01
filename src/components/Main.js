@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import WeatherCard from "./WeatherCard.js";
 import ItemCard from "./ItemCard.js";
-import { defaultClothingItems } from "../utils/constants.js";
+// import { defaultClothingItems } from "../utils/constants.js";
 import "../blocks/Main.css";
-import { CurrentTempUnitContext } from "../contexts/CurrentTempUnitContext.js";
+import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext.js";
 import React from "react";
 
-const cl = console.log.bind(console);
+// const cl = console.log.bind(console);
 
 function Main({ items, weatherTemp, onSelectCard }) {
-  const { currentTempUnit } = useContext(CurrentTempUnitContext);
+  const { currentTempUnit } = useContext(CurrentTemperatureUnitContext);
   const temp = weatherTemp?.temperature?.[currentTempUnit];
   const getFareWeatherType = () => {
     if (temp >= 86) {

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min.js";
 import "../blocks/Header.css";
 import WTWRLogo from "../images/WTWRLogo.svg";
 import userAvatar from "../images/user-avatar.svg";
-import Tempswitch from "./Tempswitch.js";
+import ToggleSwitch from "./ToggleSwitch.js";
 
 function Header({ onCreateActiveModal }) {
   const currentDate = new Date().toLocaleString("default", {
@@ -23,7 +23,7 @@ function Header({ onCreateActiveModal }) {
       </div>
       <ul className="header__btns">
         <li>
-          <Tempswitch />
+          <ToggleSwitch />
         </li>
         <li>
           <button

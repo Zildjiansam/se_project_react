@@ -1,5 +1,5 @@
 import "../blocks/Profile.css";
-import Sidebar from "./Sidebar";
+import SideBar from "./SideBar.js";
 import ClothesSection from "./ClothesSection";
 
 const Profile = ({ items, onSelectCard }) => {
@@ -7,7 +7,7 @@ const Profile = ({ items, onSelectCard }) => {
     <>
       <main className="profile__main">
         <div className="profile__sidebar">
-          <Sidebar />
+          <SideBar />
         </div>
         <ClothesSection onSelectCard={onSelectCard} items={items} />
       </main>
