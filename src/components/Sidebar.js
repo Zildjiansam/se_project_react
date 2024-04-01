@@ -1,4 +1,4 @@
-import "../blocks/SideBar.css";
+import "../blocks/Sidebar.css";
 import userAvatar from "../images/user-avatar.svg";
 
 const SideBar = () => {
