@@ -1,6 +1,5 @@
 import ItemCard from "./ItemCard";
 import "../blocks/ClothesSection.css";
-// import { defaultClothingItems } from "../utils/constants";
 
 const ClothesSection = ({ items, onSelectCard }) => {
   return (

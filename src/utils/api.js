@@ -4,7 +4,7 @@ const baseUrl = "http://localhost:3001";
 
 const fetchHeaders = { "Content-Type": "application/json" };
 
-const checkResponse = (res) => {
+export const checkResponse = (res) => {
   return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
 };
 

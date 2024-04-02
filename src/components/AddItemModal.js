@@ -26,6 +26,13 @@ const AddItemModal = ({ isOpen, onAddItem, onCloseModal }) => {
     onAddItem({ name: name, imageUrl: imageUrl, weather: weather });
     onCloseModal();
   }
+
+  useEffect(() => {
+    setName("");
+    setimageUrl("");
+    setWeather("");
+  }, [isOpen]);
+
   return (
     <ModalWithForm
       id="modal-with-form"
@@ -42,15 +49,17 @@ const AddItemModal = ({ isOpen, onAddItem, onCloseModal }) => {
         name="name"
         placeholder="Name"
         onChange={handleNameChange}
+        value={name}
       ></input>
       <label className="modal__label" type="text">
         Image
       </label>
       <input
         className="modal__input"
-        url="url"
+        type="url"
         placeholder="Image URL"
         onChange={handleUrlChange}
+        value={imageUrl}
       ></input>
       <p className="modal__weather-type-prompt">Select the weather type:</p>
       <div className="modal__radio-btn-group">

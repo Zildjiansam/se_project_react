@@ -53,15 +53,14 @@ function App() {
   }
 
   function handleToggleSwitchChange() {
-    if (currentTemperatureUnit === "C") setCurrentTempUnit("F");
-    if (currentTemperatureUnit === "F") setCurrentTempUnit("C");
+    setCurrentTempUnit(currentTemperatureUnit === "F" ? "C" : "F");
   }
 
   function handleSubmitItem(data) {
     cl(data);
     addClothingItem(data)
       .then((res) => {
-        setClothingItems((prevItems) => [data, ...prevItems]);
+        setClothingItems((prevItems) => [res, ...prevItems]);
       })
       .catch((res) => {
         console.log(`Error ${res}`);
