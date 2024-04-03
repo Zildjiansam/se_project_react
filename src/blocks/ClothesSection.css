@@ -2,13 +2,30 @@
   width: 100%;
 }
 
-.clothes-section_header {
+.clothes-section__header {
   font-family: "Cabinet Grotesk";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin: 0 0 10px;
   width: 100%;
+  display: flex;
+}
+
+.clothes-section__header_add-btn {
+  font-family: "Cabinet Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #808080;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.clothes-section__header_add-btn:hover {
+  color: #000;
 }
 
 .clothes-section__item-list {
